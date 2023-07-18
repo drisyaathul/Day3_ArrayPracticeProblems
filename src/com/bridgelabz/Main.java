@@ -84,5 +84,14 @@ public class Main {
         for (int i=array6.length-1; i>=0; i--) {
             System.out.println(array6[i]);
         }
+        System.out.println();
+        //7.Print the elements of an array present on an even position
+        System.out.println("Elements of an Array present in an Odd Position :-");
+
+        int[] array7 = {10,11,12,13,14,15,16,17,18,19,20};
+        for (int i=1; i<array7.length; i=i+2) {
+            System.out.println("Index = " +i+"," + "Value =" +array7[i]);
+        }
+        System.out.println();
     }
 }
