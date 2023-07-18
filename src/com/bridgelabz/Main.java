@@ -1,6 +1,8 @@
 package com.bridgelabz;
 
 import java.util.Arrays;
+import java.util.Scanner;
+import java.util.SortedMap;
 
 public class Main {
     public static void main(String[] args) {
@@ -57,7 +59,7 @@ public class Main {
 
         int[] array4 = {20,8,12,15,9,10};
         System.out.println("Array = "+Arrays.toString(array4));
-        int smallestElement =  array4[0];    //Considering zeroth element is largest element
+        int smallestElement =  array4[0];    //Considering zeroth element is smallest element
 
         for (int i=1; i<array4.length; i++) {
             if (array4[i] < smallestElement) {
@@ -139,12 +141,32 @@ public class Main {
         //10.2nd Largest Number in an Array
         System.out.println("Second Largest Element in an Array :-");
 
-        int array10[] = {50, 20, 35, 85, 90, 75};
-        System.out.println("Array = "+ Arrays.toString(array10));
-        Arrays.sort(array10);
-        System.out.println("Sorted Array = "+ Arrays.toString(array10));
-        int count = array10.length;
-        System.out.println("Second Largest Number = "+array10[count-2]);
+        int[] array10 = new int[6];
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the Elements of array : ");
+
+        for (int i=0; i<6; i++) {
+            array10[i] = scanner.nextInt();
+        }
+        System.out.println("Array Elements :");
+        for (int i=0; i<6; i++) {
+            System.out.println(array10[i]);
+        }
+
+        int maximum = array10[0];
+        int secondLargest = array10[0];
+        for (int i=0; i<array10.length; i++) {
+            if (maximum < array10[i]) {
+                secondLargest = maximum;
+                maximum = array10[i];
+            }
+            if (array10[i] < maximum && array10[i] > secondLargest) {
+                secondLargest = array10[i];
+            }
+        }
+
+        //System.out.println("Largest Number In Array : "+maximum);
+        System.out.println("Second Largest Number in Array : "+secondLargest);
 
     }
 }
