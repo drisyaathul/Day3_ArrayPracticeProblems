@@ -107,6 +107,34 @@ public class Main {
                 }
             }
         }
+        System.out.println();
+        //9.Sort the elements of an array in ascending order
+        System.out.println("Sort the elements of an array in ascending order :-");
+
+        int[] array9 = {10, 8, 6, 12, 9, 3};
+        int temp = 0;
+
+        System.out.println("Elements of original array ");
+        for (int i = 0; i < array9.length; i++) {
+            System.out.print(array9[i] + " ");
+        }
+
+        for (int i = 0; i < array9.length; i++) {
+            for (int j = i + 1; j < array9.length; j++) {
+                if (array9[i] > array9[j]) {
+                    temp = array9[i];
+                    array9[i] = array9[j];
+                    array9[j] = temp;
+                }
+            }
+        }
+        System.out.println();
+
+        System.out.println("Displaying Elements in Ascending order");
+        for (int i = 0; i < array9.length; i++){
+            System.out.print(array9[i] + " ");
+        }
+
 
     }
 }
