@@ -49,5 +49,18 @@ public class Main {
             }
         }
         System.out.println("The Largest Element in an Array is "+largestElement);
+        //4.print the Smallest element in an array
+        System.out.println("Smallest Element in an array :-");
+
+        int[] array4 = {20,8,12,15,9,10};
+        System.out.println("Array = "+Arrays.toString(array4));
+        int smallestElement =  array4[0];    //Considering zeroth element is largest element
+
+        for (int i=1; i<array4.length; i++) {
+            if (array4[i] < smallestElement) {
+                smallestElement = array4[i];
+            }
+        }
+        System.out.println("The Smallest element in an Array is "+smallestElement);
     }
 }
