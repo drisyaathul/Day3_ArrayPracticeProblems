@@ -11,6 +11,7 @@ public class Main {
         System.out.println(array[0]);
         System.out.println(array[1]);
         System.out.println(array[2]);
+        System.out.println();
         //2.find the frequency of each element in the array
         System.out.println("Frequency of each element in the array :-");
 
@@ -36,6 +37,7 @@ public class Main {
                 System.out.println("Frequency of "+array2[i]+" : "+visitedArray[i]);
             }
         }
+        System.out.println();
         //3.print the largest element in an array
         System.out.println("Largest Element in an array :-");
 
@@ -49,6 +51,7 @@ public class Main {
             }
         }
         System.out.println("The Largest Element in an Array is "+largestElement);
+        System.out.println();
         //4.print the Smallest element in an array
         System.out.println("Smallest Element in an array :-");
 
@@ -62,5 +65,13 @@ public class Main {
             }
         }
         System.out.println("The Smallest element in an Array is "+smallestElement);
+        System.out.println();
+        //5.Print the elements of an array present on an even position
+        System.out.println("Elements of an Array present in an Even Position :-");
+
+        int[] array5 = {10,11,12,13,14,15,16,17,18,19,20};
+        for (int i=0; i<array5.length; i=i+2) {
+            System.out.println("Index = " +i+"," + "Value =" +array5[i]);
+        }
     }
 }
