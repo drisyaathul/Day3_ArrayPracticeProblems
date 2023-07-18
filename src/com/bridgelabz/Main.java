@@ -1,5 +1,7 @@
 package com.bridgelabz;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("*** Array Practice Problems ***");
@@ -34,5 +36,18 @@ public class Main {
                 System.out.println("Frequency of "+array2[i]+" : "+visitedArray[i]);
             }
         }
+        //3.print the largest element in an array
+        System.out.println("Largest Element in an array :-");
+
+        int[] array3 = {5,8,12,15,9,10};
+        System.out.println("Array = "+Arrays.toString(array3));
+        int largestElement =  array3[0];    //Considering zeroth element is largest element
+
+        for (int i=1; i<array3.length; i++) {
+            if (array3[i] > largestElement) {
+                largestElement = array3[i];
+            }
+        }
+        System.out.println("The Largest Element in an Array is "+largestElement);
     }
 }
