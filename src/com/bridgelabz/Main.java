@@ -134,7 +134,17 @@ public class Main {
         for (int i = 0; i < array9.length; i++){
             System.out.print(array9[i] + " ");
         }
+        System.out.println();
+        System.out.println();
+        //10.2nd Largest Number in an Array
+        System.out.println("Second Largest Element in an Array :-");
 
+        int array10[] = {50, 20, 35, 85, 90, 75};
+        System.out.println("Array = "+ Arrays.toString(array10));
+        Arrays.sort(array10);
+        System.out.println("Sorted Array = "+ Arrays.toString(array10));
+        int count = array10.length;
+        System.out.println("Second Largest Number = "+array10[count-2]);
 
     }
 }
