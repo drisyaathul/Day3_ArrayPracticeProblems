@@ -73,5 +73,16 @@ public class Main {
         for (int i=0; i<array5.length; i=i+2) {
             System.out.println("Index = " +i+"," + "Value =" +array5[i]);
         }
+        System.out.println();
+        //6.Print the elements of an array in reverse order
+        System.out.println("Elements of an Array in Reverse Order :-");
+
+        int[]array6 = {25,35,15,95,75,55};
+
+        System.out.println("Array = "+Arrays.toString(array6));
+        System.out.println("Reverse Array :- ");
+        for (int i=array6.length-1; i>=0; i--) {
+            System.out.println(array6[i]);
+        }
     }
 }
