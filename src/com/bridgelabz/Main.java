@@ -2,7 +2,6 @@ package com.bridgelabz;
 
 import java.util.Arrays;
 import java.util.Scanner;
-import java.util.SortedMap;
 
 public class Main {
     public static void main(String[] args) {
@@ -131,7 +130,6 @@ public class Main {
             }
         }
         System.out.println();
-
         System.out.println("Displaying Elements in Ascending order");
         for (int i = 0; i < array9.length; i++){
             System.out.print(array9[i] + " ");
@@ -150,9 +148,9 @@ public class Main {
         }
         System.out.println("Array Elements :");
         for (int i=0; i<6; i++) {
-            System.out.println(array10[i]);
+            System.out.print(array10[i]+" ");
         }
-
+        System.out.println();
         int maximum = array10[0];
         int secondLargest = array10[0];
         for (int i=0; i<array10.length; i++) {
@@ -164,9 +162,7 @@ public class Main {
                 secondLargest = array10[i];
             }
         }
-
         //System.out.println("Largest Number In Array : "+maximum);
         System.out.println("Second Largest Number in Array : "+secondLargest);
-
     }
 }
